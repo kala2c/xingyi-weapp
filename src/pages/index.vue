@@ -85,6 +85,7 @@
 
 .list-item-right .list-item-title {
   padding: 6px 0;
+  font-size: 16px;
 }
 
 .list-item-right .list-item-desc {

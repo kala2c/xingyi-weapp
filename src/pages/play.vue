@@ -1,7 +1,8 @@
 <template>
   <view class="container">
     <view class="play-window">
-      <video id="player" :src="course.url" controls></video> 
+      <!-- <video id="player" :src="course.url" controls></video>  -->
+      <video id="player" src="http://qn.c2wei.cn/ltAUkbHvFh9OmBWsSil58tvcwe66" controls></video> 
     </view>
     <view class="step" 
       v-for="(step, idx) in courses"
@@ -25,6 +26,7 @@
 
 <script>
 import api from '../api'
+// import "../static/html5media.min.js"
 export default {
   data() {
     return {
@@ -32,13 +34,12 @@ export default {
       course: null
     }
   },
-  async onLunch(option) {
+  async onLaunch(option) {
     console.log(option)
   },
   async onLoad(option) {
     let { categoryId, courseId } = option
     console.log(categoryId, courseId)
-    let that = this
     let res = await api.getCourse({
       data: {
         category_id: categoryId,
@@ -46,7 +47,7 @@ export default {
       }
     })
     let data = res.data.data
-    console
+    console.log(data)
     this.courses = data.courses
     this.course = data.course
   },

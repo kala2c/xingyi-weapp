@@ -48,7 +48,7 @@ export default {
       let categoryId = course.category.id
       let courseId = course.id 
       uni.navigateTo({
-        url: '/pages/play?categoryId='+categoryId+'&courseId='+courseId
+        url: '/pages/playWebview?categoryId='+categoryId+'&courseId='+courseId
       })
     }
   }
@@ -63,6 +63,8 @@ export default {
   background-color: #fa6000;
   color: #fff;
   padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .step-desc {
   box-sizing: border-box;
@@ -82,6 +84,7 @@ export default {
 }
 .step-list-group-item-text .title {
   display: inline-block;
+  font-size: 17px;
   color: #373d41;
   letter-spacing: 0;
   vertical-align: middle;
@@ -95,6 +98,7 @@ export default {
   float: right;
   vertical-align: middle;
   font-size: 12px;
+  margin-top: 5px;
   color: #ff6a00;
   letter-spacing: 0;
 }

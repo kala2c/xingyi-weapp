@@ -7,21 +7,51 @@
 			}
 		},
 		{
-			"path": "pages/play",
-			"style": {
-				"navigationBarTitleText": "课程播放"
-			}
-		},
-		{
 			"path": "pages/course",
 			"style": {
 				"navigationBarTitleText": "课程详情"
 			}
 		},
 		{
-			"path": "pages/webview",
+			"path": "pages/play",
 			"style": {
 				"navigationBarTitleText": "课程播放"
+			}
+		},
+		{
+			"path": "pages/playWebview",
+			"style": {
+				"navigationBarTitleText": "课程播放"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/user/info",
+			"style": {
+				"navigationBarTitleText": "机构简介"
+			}
+		},
+		{
+			"path": "pages/user/concat",
+			"style": {
+				"navigationBarTitleText": "联系我们"
 			}
 		}
 	],
@@ -40,7 +70,7 @@
         "pagePath": "pages/index",
         "text": "课程学习"
     }, {
-        "pagePath": "pages/webview",
+        "pagePath": "pages/user/user",
         "text": "个人中心"
     }]
 }
