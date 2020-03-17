@@ -1,5 +1,7 @@
 # xingyi-weapp
 
+同沐阳光社会服务中心的小程序 基于uni-app
+
 ## Project setup
 ```
 npm install
@@ -7,13 +9,14 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run dev:h5
+
+npm run dev:mp-wexin 
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
-```
+npm run build:h5
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+npm run build:mp-wexin
+```
